@@ -1,0 +1,106 @@
+/**
+ * Custom Style Sheet - Katalog Toko Sepatu (SKKNI JWD)
+ * Unit: J.620100.005.02 (Mengimplementasikan User Interface)
+ */
+
+:root {
+    --brand-primary: #0d6efd;
+    --brand-dark: #1e293b;
+    --brand-light: #f8fafc;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --card-hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: #f1f5f9;
+    color: #334155;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-product:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.shoe-thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.shoe-detail-img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img-preview {
+    max-height: 200px;
+    border-radius: 8px;
+    display: none;
+    margin-top: 10px;
+    border: 2px dashed #cbd5e1;
+    padding: 4px;
+}
+
+.table th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.stats-card {
+    background: #ffffff;
+    border-left: 4px solid var(--brand-primary);
+}
+
+footer {
+    background-color: #1e293b;
+    color: #94a3b8;
+    margin-top: auto;
+}
+
+footer a {
+    color: #cbd5e1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
